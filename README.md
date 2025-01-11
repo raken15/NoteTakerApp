@@ -8,6 +8,33 @@ The app demonstrates a clean separation of concerns and adheres to best practice
 
 ---
 
+# Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Showcase](#showcase)
+- [MVVM Structure](#mvvm-structure)
+  - [MainWindow (View)](#mainwindow-view)
+  - [MainViewModel](#mainviewmodel)
+  - [Commands](#commands)
+- [Installation and Usage with Release Binary File](#installation-and-usage-with-release-binary-file)
+  - [Prerequisites](#prerequisites)
+  - [Installation Steps](#installation-steps)
+- [Building and Running the Project](#building-and-running-the-project)
+  - [Build and Runtime Prerequisites](#build-and-runtime-prerequisites)
+  - [Building the Project](#building-the-project)
+  - [Executing the Project Post-Build](#executing-the-project-post-build)
+- [How It Works](#how-it-works)
+  - [Adding Notes](#adding-notes)
+  - [Removing Notes](#removing-notes)
+- [Testing](#testing)
+  - [Tests](#tests)
+  - [Running Tests](#running-tests)
+- [Future Improvements](#future-improvements)
+- [License](#license)
+
+---
+
 ## Features
 
 - **Add Notes**: Create a new note using the provided text box and save it.
@@ -50,20 +77,54 @@ The application is structured following the MVVM design pattern:
 
 ---
 
-## Installation and Usage
+## Installation and Usage with Release Binary File
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/raken15/NoteTakerApp.git
-   cd NoteTakerApp
-   ```
-2. Open the project in your preferred IDE (e.g., Visual Studio Code).
-3. Build and run the application:
-    - Ensure you have the .NET SDK installed.
-    - Use the following command to run: 
-      ```bash
-      dotnet run
-      ```
+### Prerequisites
+
+- Windows operating system
+
+### Installation Steps
+
+1. Navigate to the **Releases** section of this project.
+   - The latest release can be found [here](https://github.com/raken15/NoteTakerApp/releases/).
+2. Download the `NoteTakerApp_v1.0.0.zip` file.
+   - Or any other release version zip file.
+4. Extract the contents of the zip file.
+5. Run the `NoteTaker.exe` file.
+6. Save notes or Remove Notes by using the textbox and the listbox and the buttons
+
+---
+
+## Building and Running the Project
+
+### Build and Runtime Prerequisites
+
+- Visual Studio Code (or any text editor/IDE with C# support)
+- .NET 8.0 SDK
+- Windows operating system
+
+### Building the Project
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/raken15/NoteTakerApp.git
+    ```
+   - Alternatively, you can click the green **Code** button on the project’s GitHub page to download as a zip file and extract it.
+   
+2. Navigate to the solution directory:
+    ```bash
+    cd NoteTakerApp
+    ```
+   - You may also use your file explorer to navigate to the solution folder.
+
+3. Open the solution (`.sln` file) in Visual Studio Code or another compatible text editor/IDE.
+
+4. Build the solution to restore all dependencies.
+
+### Executing the Project Post-Build
+
+1. Build the solution.
+2. Execute the application either from Visual Studio Code from the project `NoteTaker` or by running the executable (`.exe` file) located in the `bin` folder.
 ---
 
 ## How It Works
