@@ -76,7 +76,7 @@ The application is structured following the MVVM design pattern:
 
 ## Screenshot
 
-![NoteTaker App Screenshot](path-to-screenshot.png)
+![NoteTaker App Showcase](Images/NoteTakerShowcase.gif)
 
 ---
 
