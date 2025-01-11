@@ -21,10 +21,26 @@ public class MainViewModel : INotifyPropertyChanged
             }
         }
     }
+    private string? _selectedNote;
+    public string? SelectedNote
+    {
+        get => _selectedNote;
+        set
+        {
+            _selectedNote = value;
+            OnPropertyChanged(nameof(SelectedNote));
+            if (RemoveNoteCommand is RelayCommand relayCommand)
+            {
+                relayCommand.RaiseCanExecuteChanged();
+            }
+        }
+    }
     public ICommand SaveNoteCommand { get; }
+    public ICommand RemoveNoteCommand { get; }
     public MainViewModel()
     {
         SaveNoteCommand = new RelayCommand(SaveNote, CanSaveNote);
+        RemoveNoteCommand = new RelayCommand(RemoveNote, CanRemoveNote);
     }
     public void SaveNote()
     {
@@ -35,6 +51,15 @@ public class MainViewModel : INotifyPropertyChanged
         }
     }
     public bool CanSaveNote() => !string.IsNullOrEmpty(NoteText);
+    public void RemoveNote()
+    {
+        if(SelectedNote is not null)
+        {
+            Notes.Remove(SelectedNote);
+            SelectedNote = null;
+        }
+    }
+    public bool CanRemoveNote() => SelectedNote is not null;
     public event PropertyChangedEventHandler? PropertyChanged;
     protected virtual void OnPropertyChanged(string propertyName)
     {
