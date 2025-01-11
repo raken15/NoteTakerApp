@@ -8,6 +8,33 @@ The app demonstrates a clean separation of concerns and adheres to best practice
 
 ---
 
+# Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Showcase](#showcase)
+- [MVVM Structure](#mvvm-structure)
+  - [MainWindow (View)](#mainwindow-view)
+  - [MainViewModel](#mainviewmodel)
+  - [Commands](#commands)
+- [Installation and Usage with Release Binary File](#installation-and-usage-with-release-binary-file)
+  - [Prerequisites](#prerequisites)
+  - [Installation Steps](#installation-steps)
+- [Building and Running the Project](#building-and-running-the-project)
+  - [Build and Runtime Prerequisites](#build-and-runtime-prerequisites)
+  - [Building the Project](#building-the-project)
+  - [Executing the Project Post-Build](#executing-the-project-post-build)
+- [How It Works](#how-it-works)
+  - [Adding Notes](#adding-notes)
+  - [Removing Notes](#removing-notes)
+- [Testing](#testing)
+  - [Tests](#tests)
+  - [Running Tests](#running-tests)
+- [Future Improvements](#future-improvements)
+- [License](#license)
+
+---
+
 ## Features
 
 - **Add Notes**: Create a new note using the provided text box and save it.
