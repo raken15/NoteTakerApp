@@ -16,6 +16,12 @@ The app demonstrates a clean separation of concerns and adheres to best practice
 
 ---
 
+## Showcase
+
+![NoteTaker App Showcase](Images/NoteTakerShowcase.gif)
+
+---
+
 ## MVVM Structure
 
 The application is structured following the MVVM design pattern:
@@ -74,9 +80,23 @@ The application is structured following the MVVM design pattern:
 
 ---
 
-## Screenshot
+## Testing
 
-![NoteTaker App Showcase](Images/NoteTakerShowcase.gif)
+This project includes unit tests for the `MainViewModel` class.
+
+### Tests
+
+- **MainViewModelTests**
+  - `SaveNoteCommand_AddsNoteToList`: Verifies that when a note is saved, it is added to the `Notes` collection.
+  - `RemoveNoteCommand_RemovesNoteFromList`: Verifies that when a note is removed, it is deleted from the `Notes` collection.
+
+### Running Tests
+
+To run the tests, open the tests in Visual Studio Code or your preferred IDE, and use the following command:
+```bash
+dotnet test
+```
+This will run all the tests in the solution and display the results in the terminal.
 
 ---
 
