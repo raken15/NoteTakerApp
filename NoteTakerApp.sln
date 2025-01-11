@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteTaker", "NoteTaker\NoteTaker.csproj", "{2547265B-108A-4D30-95B9-B64687F6EF4D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteTaker.Tests", "NoteTaker.Tests\NoteTaker.Tests.csproj", "{17839B0B-2558-4447-9CE2-383E0301FF87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{2547265B-108A-4D30-95B9-B64687F6EF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2547265B-108A-4D30-95B9-B64687F6EF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2547265B-108A-4D30-95B9-B64687F6EF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17839B0B-2558-4447-9CE2-383E0301FF87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17839B0B-2558-4447-9CE2-383E0301FF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17839B0B-2558-4447-9CE2-383E0301FF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17839B0B-2558-4447-9CE2-383E0301FF87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
